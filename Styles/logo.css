@@ -84,12 +84,14 @@ main{
 /* Productive Section */
 
 .users section{
-    background-color: rgba(78, 71, 255, 0.51); 
-    padding: 80px 50px;
+    /* background-color: rgba(78, 71, 255, 0.51);  */
+    padding: 80px 50px ;
+    text-align: center;
     margin: 116px 141px 134px 159px;
 
 
 }
+
 .section-items{
 justify-content: space-around;
 display: flex;
@@ -112,31 +114,57 @@ display: flex;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.Feedback{
-    /* padding: 24px; */
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 12px;
+.feedback-container {
+    /* display: flex; */
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px; 
 }
-
-.about-feedback{
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.feed-user{
+.feedback-cards{
     display: flex;
-   
 }
 
-.feed-title {
-    max-width: 366.67px;
-  margin-top: 12px;
-  font-weight: bold;
+.feedback-section {
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 60px 0;
 }
 
-.feed-desceiption {
-    margin-top: 8px;
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feedback-card {
+  background-color: none;
+  padding: 0;
+  border-radius: 0;
+  max-width: 300px;
+  text-align: left;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
 
 }
 /* .avatar{
@@ -174,7 +202,7 @@ list-style: none;
 display: flex;
 justify-content: center;
 gap: 30px;
-/* flex-wrap: wrap; */
+
 }
 .footer-links li a{
 margin: 45px 24px;
